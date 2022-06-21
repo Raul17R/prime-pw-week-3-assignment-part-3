@@ -62,3 +62,13 @@ console.log(sumArray);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let totalParts = 572;
+const eachBox = 7;
+let total = 0 ;
+while (totalParts = 572){
+    total = totalParts / eachBox ;
+    decimals = totalParts % eachBox;
+    console.log(total);
+    console.log(decimals);
+    break;
+}
