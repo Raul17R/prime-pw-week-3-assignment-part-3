@@ -36,14 +36,25 @@ for (let index = 0; index < supplyChanges.length; index++) {
     }else if (supplyChanges[index] === 0){
         console.log('No Changes');
 
-    }else if (supplyChanges[index] < 0)
+    }else if (supplyChanges[index] < 0){
         console.log('Removed Parts ' + supplyChanges[index]);
     }
+}
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
+for (const index of supplyChanges) {
+    if (index > 0) {
+        console.log('Added ' + index, 'Parts');
+    }else if (index === 0){
+        console.log('No Changes');
+
+    }else if (index < 0){
+        console.log('Removed Parts ' + index);
+    }
+}
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
@@ -67,8 +78,12 @@ const eachBox = 7;
 let total = 0 ;
 while (totalParts = 572){
     total = totalParts / eachBox ;
-    decimals = totalParts % eachBox;
+    //decimals = totalParts % eachBox;
     console.log(total);
-    console.log(decimals);
+    
+    console.log('Parts Left :' ,total % 1);
+    //let t = total.split(".");
+    //console.log(t);
+    //console.log(decimals);
     break;
 }
